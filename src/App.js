@@ -62,7 +62,7 @@ function App() {
     <div className="container">
       
       <div className="header">
-      <header>Movie Recommendations</header>
+      <header className>Movie Recommendations</header>
       </div>
 
       {/* <button onClick={() => setDisplay(!display)}>Add New Movie</button> */}
