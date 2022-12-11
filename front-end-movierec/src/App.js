@@ -10,7 +10,7 @@ import Edit from './Components//Edit.js'
 
 function App() {
 
-   const [display, setDisplay] = useState(false)
+  //  const [display, setDisplay] = useState(false)
    const [movie, setMovie] = useState([])
 
   //Get...Calling on Movie.js file
@@ -65,9 +65,9 @@ function App() {
       <header>Movie Recommendations</header>
       </div>
 
-      <button onClick={() => setDisplay(!display)}>Add New Movie</button>
+      {/* <button onClick={() => setDisplay(!display)}>Add New Movie</button> */}
 
-      {display ? <Add handleCreate = {handleCreate}/> : null}
+      <Add handleCreate = {handleCreate}/> 
 
       {movie.map((movie) => {
         return (
