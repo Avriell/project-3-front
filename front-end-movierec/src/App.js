@@ -23,9 +23,11 @@ function App() {
   
   //Create...Calling on Add.js file
   const handleCreate = (data) => {
+    console.log(data)
      axios.post('http://localhost:3000/movielist', data)
      .then((response) => {
         setMovie([...movie, response.data])
+        
      })
   }
 
