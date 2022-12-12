@@ -1,5 +1,308 @@
-.App {
-  background-color: aquamarine;
+
+.backgroundimg {
+  /* position:static; */
+  width: 105%;
+  height: 50vh;
+  margin-top: 2%;
+  /* display: none; */
+  /* background-repeat: repeat; */
+  animation: fadeIn ease 10s;
+  animation-iteration-count: infinite;
+
+}
+ @keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}}
+
+
+.titleMR {
+position:absolute;
+/* flex-wrap: wrap;  */
+text-align:center;
+width:max-content;
+/* height: 5vh; */
+/* margin-top: 0%; */
+font-weight: bolder;
+text-shadow: 2px 2px 2px rgb(168, 48, 48);
+top: 1rem;
+font-size: 30px;
+background-color: grey;
+padding: 0;
+min-height: 2vh;
+right: 2.2rem;
+color: whitesmoke;
+/* font: weight 800px;; */
+animation: fadeIn ease 10s;
+animation-iteration-count: infinite;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}}
+
+.containeradd {
+  display: flex;
+  align-self: flex-start;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: red;
+  font-weight: 800px;
+  width: 100%;
+  height: 66vh;
+  border: solid;
+  border-color: rgb(74, 74, 143);
+  border-width: 10px;
+  /* margin-top: 0%; */
+  background-image: url('https://i.pinimg.com/564x/45/5e/a2/455ea28a636f75b5b4dca4f6249322ef.jpg');
+  background-repeat: no-repeat;
+} 
+@media (min-width: 576px) {
+  :root {
+    --size-divisor: 2;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    --size-divisor: 1.5;
+  }
+}
+@media (min-width: 992px) { 
+  :root {
+    --size-divisor: 1;
+  }
+}
+@media (min-width: 1200px) { 
+  :root {
+    --size-divisor: .67;
+  }
+}
+
+.submitaddbtm {
+  background-color: red;
 
 }
 
+/* .carousel-item {
+  transition: transform 2s ease, opacity .5s ease-out;
+  height: 30%;
+} */
+
+
+
+.carousel-inner {
+float:right;
+height: 30%;
+width: 50%;
+align-self: center;
+padding-left: 20% 20% 20% 20%;
+/* margin: 10%; */
+margin-top: 8%;
+margin-bottom: 10%;
+margin-left: 50%;
+margin-right: 10%;
+/* padding-right: -200%; */
+border-style: solid;
+border-color: lightsteelblue;
+border-width: .5rem;
+
+}
+
+.img1{
+  height: 30vh;
+  
+}
+
+/* Add.js page input sections */
+.titleadd {
+display: flex;
+flex-direction: column;
+margin-left: 5%;
+margin-top: -30%;
+font-size:x-large;
+background-color: whitesmoke;
+}
+.runtimeadd {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  font-size:x-large;
+  background-color: whitesmoke;
+}
+.reviewadd {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  font-size:x-large;
+  background-color: whitesmoke;
+}
+.imgadd {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  font-size:x-large;
+  background-color: whitesmoke;
+}
+.linkadd {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  font-size:x-large;
+  background-color: whitesmoke;
+}
+
+
+/* <img src="https://static.foxbusiness.com/foxbusiness.com/content/uploads/2021/11/Elf-on-the-Shelf-49ScoutElfKazooBand-thumbnail.png" 
+
+<img src="https://m.media-amazon.com/images/M/MV5BMTk4MDM0MDM3N15BMl5BanBnXkFtZTgwMzIzMzU2MzE@._V1_.jpg"
+
+
+/* DOES NOT RESIZE */
+/* <img src="https://h2.commercev3.net/cdn.bitsandpieces.com/images/1000/40481.jpg" */ 
+
+/* NOTES */
+
+
+/* img.center{
+  position:absolute;
+  z-index: -1;
+} */
+
+<<<<<<< HEAD
+=======
+/* .container {
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+  height: 100%;
+  width: 100%;
+} */
+
+/* header { */
+  /* background-color: #282c34; */
+  /* min-height: 13vh; */
+  /* position:absolute; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* font-size: calc(15px + 5vmin);
+  color: black;
+  font-weight:bolder;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  /* margin-top: 0%; */
+  /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5OCusHEe21ILJPmV022KgtsowWlqOblv60Q&usqp=CAU'); */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  /* opacity: 10%; */
+/* } */
+
+
+/* <img className="backgroundimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5OCusHEe21ILJPmV022KgtsowWlqOblv60Q&usqp=CAU"></img> */
+
+ /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5OCusHEe21ILJPmV022KgtsowWlqOblv60Q&usqp=CAU');
+  background-repeat: no-repeat;
+  background-size:cover; */
+
+/* .backgroundimg {
+  opacity: 20%;
+  width: 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* justify-content: left; */
+ 
+
+  /* caroursel 
+
+  <div id="carouselExampleFade" className="carousel slide carousel-fade $carousel-control-transition:opacity .1s ease mw-100" data-bs-ride="carousel">
+  <div className="carousel-inner">
+    <div className="carousel-item active">
+      <img src="https://static.foxbusiness.com/foxbusiness.com/content/uploads/2021/11/Elf-on-the-Shelf-49ScoutElfKazooBand-thumbnail.png" className="d-block w-100" alt="..."/>
+    </div>
+    <div className="carousel-item">
+      <img src="https://m.media-amazon.com/images/M/MV5BMTk4MDM0MDM3N15BMl5BanBnXkFtZTgwMzIzMzU2MzE@._V1_.jpg" className="d-block w-100" alt="..."/>
+    </div>
+    <div className="carousel-item">
+      <img src="https://h2.commercev3.net/cdn.bitsandpieces.com/images/1000/40481.jpg" className="d-block w-100" alt="..."/>
+    </div>
+  </div>
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
+  </button>
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
+  </button>
+</div> */
+>>>>>>> 8be6165da77d8abeaf664f0c048925388b31eac0

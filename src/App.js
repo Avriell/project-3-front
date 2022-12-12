@@ -59,15 +59,17 @@ function App() {
   }, [])
 
   return (
-    <div className="container">
-      
+    <>
       <div className="header">
-      <header>Movie Recommendations</header>
+      <header>
+      <img className="backgroundimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5OCusHEe21ILJPmV022KgtsowWlqOblv60Q&usqp=CAU"></img>
+      <h3 className="titleMR">Movie Recommendation</h3>
+      </header>
       </div>
-
+      <div className="container">
       {/* <button onClick={() => setDisplay(!display)}>Add New Movie</button> */}
 
-      <Add handleCreate = {handleCreate}/> 
+      <Add className="add" handleCreate = {handleCreate}/> 
 
       {movies.map((movie) => {
         return (
@@ -75,11 +77,11 @@ function App() {
             <Movie movie = {movie}/>
             <Edit movie = {movie} handleEdit = {handleEdit}/>
             <button onClick={()=> {handleDelete(movie)}}>Delete</button>
-            
           </div>
         )
       })}
-    </div>
+      </div>
+    </>
   );
 }
 
