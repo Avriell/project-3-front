@@ -2,6 +2,7 @@ const Movie = (props) => {
 
     return(
         <>
+        <br/>
             <h3>Title: {props.movie.title} </h3>
             <h3>Runtime: {props.movie.runtime}</h3>
             <h3>Review: {props.movie.review}</h3>
