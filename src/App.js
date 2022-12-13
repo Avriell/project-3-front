@@ -71,20 +71,19 @@ function App() {
       <h1>WELCOME TO THE MOVIE ZONE</h1>
       <div className="container">
       
-      <Add className="add" handleCreate = {handleCreate}/> 
+      <Add className="add" handleCreate={handleCreate}/> 
 
       {movies.map((movie) => {
         return (
           <>
-           <div className="card">
-              <Movie movie = {movie}/>
-         
-              <Edit movie = {movie} handleEdit = {handleEdit}/>
-           
-              <button onClick={()=> {handleDelete(movie)}}>Delete</button>
+           <div className="card card-body border row column main">
+            <Movie movie={movie}/>
+          
+            <Edit movie={movie} handleEdit={handleEdit}/>
+          
+            <button onClick={()=> {handleDelete(movie)}}>Delete</button>
             </div>
-            
-         </>
+          </>
         )
       })}
       <br/>

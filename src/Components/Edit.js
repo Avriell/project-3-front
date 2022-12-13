@@ -40,7 +40,7 @@ import {useState} from 'react'
                     <br/>
 
                     <label htmlFor='link'>Link:</label>
-                    <input type='text' name='link' onChange={handleChange}value={movie.link}/>
+                    <input type='text' name='link' onChange={handleChange}value={movie.trailer}/>
 
                     <br/>
                     <input type='submit'/>
