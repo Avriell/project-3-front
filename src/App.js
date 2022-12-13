@@ -58,6 +58,8 @@ function App() {
      getMovies()
   }, [])
 
+
+
   return (
     <>
       <div className="header">
@@ -66,6 +68,7 @@ function App() {
       <h3 className="titleMR">Movie Recommendation</h3>
       </header>
       </div>
+      <h1>WELCOME TO THE MOVIE ZONE</h1>
       <div className="container">
       {/* <button onClick={() => setDisplay(!display)}>Add New Movie</button> */}
 
@@ -74,7 +77,7 @@ function App() {
       {movies.map((movie) => {
         return (
           <>
-            <div className="card card-body border row column main">
+            <div>
               <Movie movie = {movie}/>
          
               <Edit movie = {movie} handleEdit = {handleEdit}/>
@@ -84,6 +87,12 @@ function App() {
          </>
         )
       })}
+      <br/>
+      </div>
+      <div className="footer">
+  
+      <a className="emaillink" href="mailto:email@example.com">Contact Us <br/> Tell us your favorite Movies!</a>
+      
       </div>
     </>
   );
