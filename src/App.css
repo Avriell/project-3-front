@@ -205,13 +205,11 @@ margin-right: 5%;
 border-style: solid;
 border-color: lightsteelblue;
 border-width: .5rem;
+height: 30vh
 
 }
 
-.img1{
-  height: 30vh;
-  
-}
+
 
 /*                /////////////////////////// */
 /*                Add.js page input sections */
