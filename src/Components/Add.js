@@ -54,13 +54,13 @@ const Add = (props) => {
                 <div id="carouselExampleFade" className="carousel slide carousel-fade $carousel-control-transition:opacity .5s ease mw-100" data-bs-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img className="img1" src="https://static.foxbusiness.com/foxbusiness.com/content/uploads/2021/11/Elf-on-the-Shelf-49ScoutElfKazooBand-thumbnail.png" className="d-block w-100" alt="..." />
+                            <img className="img1 d-block w-100" src="https://static.foxbusiness.com/foxbusiness.com/content/uploads/2021/11/Elf-on-the-Shelf-49ScoutElfKazooBand-thumbnail.png" alt="..." />
                         </div>
                         <div className="carousel-item">
-                            <img className="img1" src="https://m.media-amazon.com/images/M/MV5BMTk4MDM0MDM3N15BMl5BanBnXkFtZTgwMzIzMzU2MzE@._V1_.jpg" className="d-block w-100" alt="..." />
+                            <img className="img1 d-block w-100" src="https://m.media-amazon.com/images/M/MV5BMTk4MDM0MDM3N15BMl5BanBnXkFtZTgwMzIzMzU2MzE@._V1_.jpg" alt="..." />
                         </div>
                         <div className="carousel-item">
-                            <img className="img1" src="https://i.etsystatic.com/35427494/r/il/382fc3/4135055235/il_1588xN.4135055235_8dif.jpg" className="d-block w-100" alt="..." />
+                            <img className="img1 d-block w-100" src="https://i.etsystatic.com/35427494/r/il/382fc3/4135055235/il_1588xN.4135055235_8dif.jpg" alt="..." />
                         </div>
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
