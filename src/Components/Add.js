@@ -15,7 +15,8 @@ const Add = (props) => {
         <><div className="containeradd">
 
             <form onSubmit={handleSubmit}>
-                <br/>
+                
+                <h2 className="addDescription">Add New Movie</h2>
                 <br/>
                 <br/>
                 <label className="titleadd" htmlFor='title'>Title:</label>
