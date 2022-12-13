@@ -47,6 +47,7 @@ const Add = (props) => {
 
                 <input className="submitaddbtm" type='submit' />
             </form>
+
             <br/>
             
         <div classNmae="carosize">

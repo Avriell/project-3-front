@@ -70,20 +70,20 @@ function App() {
       </div>
       <h1>WELCOME TO THE MOVIE ZONE</h1>
       <div className="container">
-      {/* <button onClick={() => setDisplay(!display)}>Add New Movie</button> */}
-
+      
       <Add className="add" handleCreate = {handleCreate}/> 
 
       {movies.map((movie) => {
         return (
           <>
-            <div>
+           <div className="card">
               <Movie movie = {movie}/>
          
               <Edit movie = {movie} handleEdit = {handleEdit}/>
            
               <button onClick={()=> {handleDelete(movie)}}>Delete</button>
             </div>
+            
          </>
         )
       })}
@@ -94,6 +94,7 @@ function App() {
       <a className="emaillink" href="mailto:email@example.com">Contact Us <br/> Tell us your favorite Movies!</a>
       
       </div>
+    
     </>
   );
 }
