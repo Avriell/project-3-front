@@ -73,11 +73,15 @@ function App() {
 
       {movies.map((movie) => {
         return (
-          <div>
-            <Movie movie = {movie}/>
-            <Edit movie = {movie} handleEdit = {handleEdit}/>
-            <button onClick={()=> {handleDelete(movie)}}>Delete</button>
-          </div>
+          <>
+            <div className="card card-body border row column main">
+              <Movie movie = {movie}/>
+         
+              <Edit movie = {movie} handleEdit = {handleEdit}/>
+           
+              <button onClick={()=> {handleDelete(movie)}}>Delete</button>
+            </div>
+         </>
         )
       })}
       </div>
