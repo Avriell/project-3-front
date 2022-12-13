@@ -239,21 +239,21 @@ background-color: whitesmoke;
 }
 .reviewadd {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-left: 5%;
   font-size:x-large;
   background-color: whitesmoke;
 }
 .imgadd {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-left: 5%;
   font-size:x-large;
   background-color: whitesmoke;
 }
 .linkadd {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-left: 5%;
   font-size:x-large;
   background-color: whitesmoke;
@@ -262,6 +262,7 @@ background-color: whitesmoke;
 .card {
   width: 18rem;
   display:flex;
+  flex-direction: column;
 }
 
 .border{
@@ -274,11 +275,13 @@ background-color: whitesmoke;
   transition: .5s ease;
   }
 
-  .column {
+  /* .column {
+    display:flex;
+    flex-direction: row;
     float: left;
     width: 25%;
     padding: 0 10px;
-  }
+  } */
   
   
   .row {margin: 0 -5px;}

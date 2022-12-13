@@ -50,7 +50,7 @@ const Add = (props) => {
 
             <br/>
             
-        <div classNmae="carosize">
+        <div className="carosize">
                 <div id="carouselExampleFade" className="carousel slide carousel-fade $carousel-control-transition:opacity .5s ease mw-100" data-bs-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
