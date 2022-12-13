@@ -1,47 +1,312 @@
-.App {
-  background-color: aquamarine;
+
+.backgroundimg {
+  /* position:static; */
+  width: 105%;
+  height: 50vh;
+  margin-top: 2%;
+  /* display: none; */
+  /* background-repeat: repeat; */
+  animation: fadeIn ease 10s;
+  animation-iteration-count: infinite;
 
 }
+ @keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}}
 
-/* .container {
+
+.titleMR {
+position:absolute;
+/* flex-wrap: wrap;  */
+text-align:center;
+width:max-content;
+/* height: 5vh; */
+/* margin-top: 0%; */
+font-weight: bolder;
+text-shadow: 2px 2px 2px rgb(168, 48, 48);
+top: 1rem;
+font-size: 30px;
+background-color: grey;
+padding: 0;
+min-height: 2vh;
+right: 2.2rem;
+color: whitesmoke;
+/* font: weight 800px;; */
+animation: fadeIn ease 10s;
+animation-iteration-count: infinite;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}}
+
+.containeradd {
   display: flex;
-  flex-direction: column;
-  background-color: aquamarine;
-  height: 100%;
+  align-self: flex-start;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: red;
+  font-weight: 800px;
   width: 100%;
-} */
-
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 66vh;
+  border: solid;
+  border-color: rgb(74, 74, 143);
+  border-width: 10px;
+  /* margin-top: 0%; */
+  background-image: url('https://i.pinimg.com/564x/45/5e/a2/455ea28a636f75b5b4dca4f6249322ef.jpg');
+  background-repeat: no-repeat;
+} 
+@media (min-width: 576px) {
+  :root {
+    --size-divisor: 2;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    --size-divisor: 1.5;
+  }
+}
+@media (min-width: 992px) { 
+  :root {
+    --size-divisor: 1;
+  }
+}
+@media (min-width: 1200px) { 
+  :root {
+    --size-divisor: .67;
+  }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.submitaddbtm {
+  background-color: red;
+
+}
+
+/* .carousel-item {
+  transition: transform 2s ease, opacity .5s ease-out;
+  height: 30%;
 } */
 
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+.carousel-inner {
+float:right;
+height: 30%;
+width: 50%;
+align-self: center;
+padding-left: 20% 20% 20% 20%;
+/* margin: 10%; */
+margin-top: 8%;
+margin-bottom: 10%;
+margin-left: 50%;
+margin-right: 10%;
+/* padding-right: -200%; */
+border-style: solid;
+border-color: lightsteelblue;
+border-width: .5rem;
+
+}
+
+.img1{
+  height: 30vh;
+  
+}
+
+/* Add.js page input sections */
+.titleadd {
+display: flex;
+flex-direction: column;
+margin-left: 5%;
+margin-top: -30%;
+font-size:x-large;
+background-color: whitesmoke;
+}
+.runtimeadd {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 5%;
+  font-size:x-large;
+  background-color: whitesmoke;
+}
+.reviewadd {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  font-size:x-large;
+  background-color: whitesmoke;
+}
+.imgadd {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  font-size:x-large;
+  background-color: whitesmoke;
+}
+.linkadd {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  font-size:x-large;
+  background-color: whitesmoke;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  width: 18rem;
+  display:flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.border{
+  transition: .5s ease;
+}
+
+.border:hover{
+  position: relative;
+  background: linear-gradient(#14ffe9, #9eff01, #ff0ce3);
+  transition: .5s ease;
   }
-  to {
-    transform: rotate(360deg);
+
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
   }
+  
+  
+  .row {margin: 0 -5px;}
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin: 1.5rem;
+  }
+
+  
+  
+  .border:hover{
+    filter: blur(7px);
+  }
+  .border:hover{
+    filter: blur(14px);
+  }
+
+  .border:hover{
+    animation: rotate 1.5s linear infinite;
+  }
+
+  @keyframes rotate {
+
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+    
+}
+
+  
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: flex;
+      margin-bottom: 20px;
+    }
+  }
+
+/* <img src="https://static.foxbusiness.com/foxbusiness.com/content/uploads/2021/11/Elf-on-the-Shelf-49ScoutElfKazooBand-thumbnail.png" 
+
+<img src="https://m.media-amazon.com/images/M/MV5BMTk4MDM0MDM3N15BMl5BanBnXkFtZTgwMzIzMzU2MzE@._V1_.jpg"
+
+
+/* DOES NOT RESIZE */
+/* <img src="https://h2.commercev3.net/cdn.bitsandpieces.com/images/1000/40481.jpg" */ 
+
+/* NOTES */
+
+
+/* img.center{
+  position:absolute;
+  z-index: -1;
 } */
+
