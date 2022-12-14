@@ -82,7 +82,7 @@ function App() {
           
               <Edit movie={movie} handleEdit={handleEdit}/>
           
-            <button onClick={()=> {handleDelete(movie)}}>Delete</button>
+            <button className="deletebtn" onClick={()=> {handleDelete(movie)}}>Delete</button>
             </div>
           </>
         )
