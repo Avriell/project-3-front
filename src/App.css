@@ -3,6 +3,8 @@
 /* ---------------------------------- */
 .container {
 background-color: lightgray;
+/* display: flex;
+flex-direction: row; */
 }
 
 
@@ -222,7 +224,7 @@ height: 30vh
 }
 .titleadd {
 display: flex;
-flex-direction: column;
+/* flex-direction: row; */
 margin-left: 5%;
 margin-top: -30%;
 font-size:x-large;
@@ -230,7 +232,7 @@ background-color: whitesmoke;
 }
 .runtimeadd {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: row; */
   margin-left: 5%;
   font-size:x-large;
   background-color: whitesmoke;
@@ -244,7 +246,7 @@ background-color: whitesmoke;
 }
 .imgadd {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   margin-left: 5%;
   font-size:x-large;
   background-color: whitesmoke;
@@ -257,11 +259,12 @@ background-color: whitesmoke;
   background-color: whitesmoke;
 }
 
-.card {
-  width: 18rem;
-  display:flex;
-  flex-direction: column;
-}
+
+/*                /////////////////////////// */
+/*                      Add.js page Cards   */
+/*                ////////////////////////// */
+
+
 
 .border{
   transition: .5s ease;
@@ -273,13 +276,12 @@ background-color: whitesmoke;
   transition: .5s ease;
   }
 
-  /* .column {
+  .row {
     display:flex;
     flex-direction: row;
-    float: left;
     width: 25%;
-    padding: 0 10px;
-  } */
+     padding: 0 10px;
+  } 
   
   
   .row {margin: 0 -5px;}
@@ -293,11 +295,13 @@ background-color: whitesmoke;
   
   
   .card {
+    display: flex;
+    flex-direction: row;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
     background-color: #f1f1f1;
-    margin: 1.5rem;
+    margin: 1rem;
   }
 
   
@@ -330,6 +334,7 @@ background-color: whitesmoke;
     .column {
       width: 100%;
       display: flex;
+      /* flex-direction: row; */
       margin-bottom: 20px;
     }
   }
@@ -346,7 +351,7 @@ background-color: whitesmoke;
   
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding: 16px;
+    padding: 18px;
     text-align: center;
     background-color: #f1f1f1;
     margin: 1.5rem;
@@ -385,7 +390,7 @@ background-color: whitesmoke;
                           /* ------------------- */
 .footer{
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   background-color: whitesmoke;
   height: 13vh;
   border: solid;

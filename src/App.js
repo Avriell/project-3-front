@@ -72,20 +72,22 @@ function App() {
       <div className="container">
       
       <Add className="add" handleCreate={handleCreate}/> 
-
+      <div className="card container">
       {movies.map((movie) => {
         return (
           <>
-           <div className="card card-body border row column main">
-            <Movie movie={movie}/>
+           <div className="maincard card border row container-fluid main">
+              
+              <Movie movie={movie}/>
           
-            <Edit movie={movie} handleEdit={handleEdit}/>
+              <Edit movie={movie} handleEdit={handleEdit}/>
           
             <button onClick={()=> {handleDelete(movie)}}>Delete</button>
             </div>
           </>
         )
       })}
+    </div>
       <br/>
       </div>
       <div className="footer">
