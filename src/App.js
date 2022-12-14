@@ -15,7 +15,7 @@ function App() {
 
   //Get...Calling on Movie.js file
   const getMovies = () => {
-     axios.get('http://localhost:3000/movierec')
+     axios.get('https://movie-rec-back.herokuapp.com/')
      .then((response) => setMovies(response.data), (err) => console.log(err))
      .catch((error) => console.log(error))
   }
@@ -24,7 +24,7 @@ function App() {
   //Create...Calling on Add.js file
   const handleCreate = (data) => {
     console.log(data)
-     axios.post('http://localhost:3000/movierec', data)
+     axios.post('https://movie-rec-back.herokuapp.com/', data)
      .then((response) => {
         setMovies([...movies, response.data])
         
@@ -33,7 +33,7 @@ function App() {
 
   //Edit
   const handleEdit = (data) => {
-    axios.put('http://localhost:3000/movierec/' + data._id, data)
+    axios.put('https://movie-rec-back.herokuapp.com/' + data._id, data)
     .then((response) => {
        let newMovies = movies.map((movies) => {
         return movies._id !== data._id ? movies : data
@@ -44,7 +44,7 @@ function App() {
 
  //Delete
   const handleDelete = (deletedMovies) => {
-     axios.delete('http://localhost:3000/movierec/' + deletedMovies._id)
+     axios.delete('https://movie-rec-back.herokuapp.com/' + deletedMovies._id)
      .then((response) => {
       let newMovies = movies.filter((movies) => {
         return movies._id !== response._id
