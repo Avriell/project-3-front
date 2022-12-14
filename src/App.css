@@ -1,3 +1,15 @@
+/* -----------------------------------*/
+/*     Mainapp--Whole application     */
+/* ---------------------------------- */
+.container {
+background-color: lightgray;
+}
+
+
+
+                    /* ----------------------------------- */
+                    /*     App.js Background Img Header    */
+                    /* ----------------------------------- */
 
 .backgroundimg {
   /* position:static; */
@@ -8,6 +20,7 @@
   /* background-repeat: repeat; */
   animation: fadeIn ease 10s;
   animation-iteration-count: infinite;
+  /* opacity: 40%; */
 
 }
  @keyframes fadeIn {
@@ -49,7 +62,17 @@
   100% {
     opacity:1;
 }}
+                    /* --------------------- */
+                    /*     App.js Title    */
+                    /* --------------------- */
 
+h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  color:rgb(168, 48, 48);
+  text-align: center;
+  text-shadow: 5px 4px 2px rgb(17, 51, 243);
+}
 
 .titleMR {
 position:absolute;
@@ -110,18 +133,24 @@ animation-iteration-count: infinite;
   100% {
     opacity:1;
 }}
+                    /* --------------------- */
+                    /*  Add.js Add Movie Box */
+                    /* --------------------- */
 
 .containeradd {
   display: flex;
   align-self: flex-start;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: red;
+  background-color: #14ffe9;
   font-weight: 800px;
-  width: 100%;
-  height: 66vh;
+  width: 102%;
+  height: 58vh;
   border: solid;
   border-color: rgb(74, 74, 143);
   border-width: 10px;
+  margin-left: -1%;
+  /* margin-right: -10%; */
   /* margin-top: 0%; */
   background-image: url('https://i.pinimg.com/564x/45/5e/a2/455ea28a636f75b5b4dca4f6249322ef.jpg');
   background-repeat: no-repeat;
@@ -147,18 +176,20 @@ animation-iteration-count: infinite;
   }
 }
 
+                    /* --------------------- */
+                    /*  Add.js Add Movie Btn */
+                    /* --------------------- */
 .submitaddbtm {
   background-color: red;
-
+  color: white;
+  margin-left: 28%;
+  font-weight: bolder;
+  font-size: larger;
+  font-style: oblique;
 }
-
-/* .carousel-item {
-  transition: transform 2s ease, opacity .5s ease-out;
-  height: 30%;
-} */
-
-
-
+                      /* ----------  */
+                      /*  Carousel */
+                      /* ----------- */
 .carousel-inner {
 float:right;
 height: 30%;
@@ -168,8 +199,8 @@ padding-left: 20% 20% 20% 20%;
 /* margin: 10%; */
 margin-top: 8%;
 margin-bottom: 10%;
-margin-left: 50%;
-margin-right: 10%;
+margin-left: 49%;
+margin-right: 5%;
 /* padding-right: -200%; */
 border-style: solid;
 border-color: lightsteelblue;
@@ -182,7 +213,15 @@ border-width: .5rem;
   
 }
 
-/* Add.js page input sections */
+/*                /////////////////////////// */
+/*                Add.js page input sections */
+/*                ////////////////////////// */
+
+.addDescription {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 9%;
+}
 .titleadd {
 display: flex;
 flex-direction: column;
@@ -200,21 +239,21 @@ background-color: whitesmoke;
 }
 .reviewadd {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-left: 5%;
   font-size:x-large;
   background-color: whitesmoke;
 }
 .imgadd {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-left: 5%;
   font-size:x-large;
   background-color: whitesmoke;
 }
 .linkadd {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-left: 5%;
   font-size:x-large;
   background-color: whitesmoke;
@@ -223,6 +262,7 @@ background-color: whitesmoke;
 .card {
   width: 18rem;
   display:flex;
+  flex-direction: column;
 }
 
 .border{
@@ -235,11 +275,13 @@ background-color: whitesmoke;
   transition: .5s ease;
   }
 
-  .column {
+  /* .column {
+    display:flex;
+    flex-direction: row;
     float: left;
     width: 25%;
     padding: 0 10px;
-  }
+  } */
   
   
   .row {margin: 0 -5px;}
@@ -294,6 +336,90 @@ background-color: whitesmoke;
     }
   }
 
+  .row {margin: 0 -5px;}
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin: 1.5rem;
+  }
+
+  .border:hover{
+    filter: blur(7px);
+  }
+  .border:hover{
+    filter: blur(14px);
+  }
+
+  .border:hover{
+    animation: rotate 1.5s linear infinite;
+  }
+
+  @keyframes rotate {
+
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    } 
+}
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: flex;
+      margin-bottom: 20px;
+    }
+  }
+
+                          /* ------------------- */
+                          /*         Footer      */
+                          /* ------------------- */
+.footer{
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  height: 13vh;
+  border: solid;
+  border-color: red;
+  border-width: 4px;
+  box-shadow: 4px 9px 10px 10px blue;  
+}
+
+.emaillink {
+  font-weight: bolder; 
+  text-decoration: none;
+  text-align: center; 
+  color: red; 
+  background-color: lightgoldenrodyellow;
+  border: solid;
+  border-color: aquamarine;
+  border-width: 2px;
+  width: 30%;
+  margin: 1.7% 1% 1% 36%;   
+  cursor: pointer;
+	background: light;
+	box-shadow: 2px 2px 2px 2px blue;
+  /* background-image: url(); */
+}
+
+
+
+
+
+                /* ----------------- */
+                     /* Attempts */
+                /* ----------------- */
 /* <img src="https://static.foxbusiness.com/foxbusiness.com/content/uploads/2021/11/Elf-on-the-Shelf-49ScoutElfKazooBand-thumbnail.png" 
 
 <img src="https://m.media-amazon.com/images/M/MV5BMTk4MDM0MDM3N15BMl5BanBnXkFtZTgwMzIzMzU2MzE@._V1_.jpg"

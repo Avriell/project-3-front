@@ -15,7 +15,8 @@ const Add = (props) => {
         <><div className="containeradd">
 
             <form onSubmit={handleSubmit}>
-                <br/>
+                
+                <h2 className="addDescription">Add New Movie</h2>
                 <br/>
                 <br/>
                 <label className="titleadd" htmlFor='title'>Title:</label>
@@ -46,9 +47,10 @@ const Add = (props) => {
 
                 <input className="submitaddbtm" type='submit' />
             </form>
+
             <br/>
             
-        <div classNmae="carosize">
+        <div className="carosize">
                 <div id="carouselExampleFade" className="carousel slide carousel-fade $carousel-control-transition:opacity .5s ease mw-100" data-bs-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
