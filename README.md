@@ -1,3 +1,57 @@
+Obstacles:
+
+    I shockingly forgot to include the export default, which causes the code not to work and a lot of frustration for a simple error and spelling. 
+    
+    Linking the video/preview link to each individual card was a big obstacle. The code was missing in the value={movie.trailer} after the {handchange}.
+
+    Styling the cards was challenging, since it was part of bootstrap, but I was able to manipulate the code enough to manipulate what I wanted to style differently. 
+
+
+WINS
+
+    I figured out how to make the link/trailer link to work, so that it would open the movie clip when pressing the link! 
+
+    I was able to style everything that I wanted to change.
+
+    I was able to add the carousel, style, and place it in the desired location with the Fantastic add movie bar.
+
+    I was able to, with help from peers to style my header and title to fade in and out. 
+
+    I was able to get most of the page reactive!! I am very impressed, since it was a daunting task! 
+
+    Wire frame was drawn in Figma, upon request. 
+
+    I realized that the data was not connecting to the Movie.js app due to having data instead of props.movie, which movies is used int he app.js and not data!!!!
+
+
+    Improvement
+
+    I wanted to add a modal.
+
+    I would like to have the cards and sizes more cohesive.
+
+    I would like to make the entire application reactive to auto adjust when adjusting the size of the screen. 
+
+
+ 
+What went well for your group? 
+
+	The overall flow went well or dividing the task and merging it together..... 
+
+What was your group's biggest struggle? 
+
+	Git was the biggest struggle, due to the pushing and pulling, but we are much more comfortable with git!  
+
+What was the most useful tool that your group relied on the most? 
+
+	CSS and Google 
+
+What was the most surprising aspect of working in a group/a thing (or things) you didn’t anticipate? 
+	I honestly did not think that everything on the website would look as nice as it does! 
+	      I am shocked with how well and how easy all of the code was able to be combined with minimal errors to make the code work/function.  
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
