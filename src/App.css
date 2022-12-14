@@ -413,6 +413,7 @@ font-weight: bold;
   
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+
     padding: 18px;
     text-align: center;
     background-color: #f1f1f1;
@@ -443,6 +444,12 @@ font-weight: bold;
       width: 100%;
       display: flex;
       margin-bottom: 20px;
+    }
+    .card {
+      display: flex;
+      flex-wrap: wrap ;
+      width: 100%;
+      
     }
   }
 

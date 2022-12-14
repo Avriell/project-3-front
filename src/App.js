@@ -69,10 +69,10 @@ function App() {
       </header>
       </div>
       <h1>WELCOME TO THE MOVIE ZONE</h1>
-      <div className="container">
+      <div className="container-fluid">
       
       <Add className="add" handleCreate={handleCreate}/> 
-      <div className="card container">
+      <div className="card container-fluid">
       {movies.map((movie) => {
         return (
           <>
